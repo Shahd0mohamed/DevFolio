@@ -25,9 +25,11 @@
     border-bottom: 2px solid white;
     width: fit-content;
     transition: all 0.6s ease;
-    /* position: relative;
-    left: 100%;
-    bottom: 0; */
+}
+.active{
+    border-bottom: 2px solid white;
+    width: fit-content;
+    transition: all 0.6s ease;
 }
 /* --------------------------end navbar---------------------------- */
 /* --------------------------start home---------------------------- */
@@ -52,6 +54,7 @@
     position: absolute;
 
 } */
+
 
 /* --------------------------end home---------------------------- */
 /* --------------------------start about-me---------------------------- */
@@ -244,6 +247,103 @@
 }
 /* --------------------------end portfolio---------------------------- */
 /* --------------------------start slider---------------------------- */
-
-
+.slider{
+    background-image: linear-gradient(#1180ffc3) , url(../images/imgi_16_overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+}
 /* --------------------------end slider---------------------------- */
+/* --------------------------start blog---------------------------- */
+#blog .container .heading h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+#blog .container .heading p {
+    position: relative;
+}
+
+#blog .container .heading p::after {
+    content: '';
+    width: 40px;
+    height: 5px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    bottom: 0;
+    background-color: #0078FF;
+    margin-top: 30px;
+    transform: translate(-50%);
+}
+#blog .container .card a:hover span{
+    transition: all 0.7s ease;
+    color: #0078FF;
+}
+#blog .container .card .badge{
+    height: 25px;
+    width: 80px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+}
+/* --------------------------end blog---------------------------- */
+/* --------------------------start contact---------------------------- */
+#contact{
+    background-image: linear-gradient(#1180ffc3) , url(../images/imgi_16_overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#contact .caption h2{
+    position: relative;
+}
+#contact .caption h2::after {
+    content: ' ';
+    width: 110px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #0077ffcd;
+}
+#contact .caption .btn{
+    transform: translate(-50%);
+}
+#contact .caption ul i{
+    color: #0078FF;
+}
+#contact .caption ul .box{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #0078ff;
+}
+#contact .caption ul li:hover .box{
+    box-shadow: 0 0 0 3px #0077ff73;
+    background-color: #0078FF;
+    color: white;
+    transition: all 0.6s ease;
+}
+/* --------------------------end contact---------------------------- */
+/* --------------------------start footer---------------------------- */
+.footer{
+    background-color: #0062D3   ;
+}
+/* --------------------------end footer---------------------------- */
+
+
+@media screen and (max-width: 767px){
+    #blog .container .card .badge{
+    height: 25px;
+    width: 80px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+}
+}
+
+
+
